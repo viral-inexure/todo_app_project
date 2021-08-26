@@ -1,0 +1,38 @@
+{% extends 'My_todo_app/base.html' %}
+{% block content %}
+
+{% for task in todo %}
+{% if task.is_completed == True %}
+<div class="card text-center my-5">
+    <div class="card-header">
+        <h1>{{task.title}}</h1>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <strike><p class="card-text"><h4>{{task.description}}</h4></p></strike>
+        <a href="{% url 'task-update' task.id %}" class="btn btn-primary">Edit</a>
+        <a class="delete-link btn btn-danger" type="button" href="{% url 'task-delete' task.id %}">Delete</a>
+    </div>
+    <div class="card-footer text-muted">
+        {{task.create_time}}
+    </div>
+</div>
+{% else %}
+<div class="card text-center my-5">
+    <div class="card-header">
+        <h1>{{task.title}}</h1>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"><h4>{{task.description}}</h4></p>
+        <a href="{% url 'task-update' task.id %}" class="btn btn-primary">Edit</a>
+        <a class="delete-link btn btn-danger" type="button" href="{% url 'task-delete' task.id %}">Delete</a>
+    </div>
+    <div class="card-footer text-muted">
+        {{task.create_time}}
+    </div>
+</div>
+
+{% endif %}
+{% endfor %}
+{% endblock %}

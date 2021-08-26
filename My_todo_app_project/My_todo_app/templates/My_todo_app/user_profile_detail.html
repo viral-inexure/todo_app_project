@@ -1,0 +1,9 @@
+{% extends 'My_todo_app/base.html' %}
+{% block content %}
+
+{{ user.id}}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+</form>
+{% endblock %}

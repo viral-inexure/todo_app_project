@@ -1,0 +1,12 @@
+{% extends 'My_todo_app/base.html' %}
+{% block content %}
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        <p><b>Are Sure you Want to Delete This Task ???</b></p>
+        <input class="button" value="delete" type="submit">
+    </form>
+</div>
+
+{% endblock %}

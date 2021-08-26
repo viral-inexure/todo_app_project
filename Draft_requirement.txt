@@ -1,0 +1,90 @@
+Software Requirement Specification(SRS)
+                for
+            My_todo_app
+
+Project Name :- My_todo_app
+
+USE IN SRS DOCUMENTS
+
+    1. Introduction
+        1.1 Purpose
+        1.2 Scope
+        1.3 Definitions
+
+    2. Overall Description
+        2.1 Product Perspective
+        2.2 User Need
+        2.3 Assumptions and Dependencies
+
+    3. System Features and Requirements
+        3.1 Functional Requirements
+        3.2 Nonfunctional Requirements
+
+    4. External Interface Requirements
+        4.1 Various interfaces for the product could be
+        4.2 Software Interfaces
+        4.3 Hardware Interfaces
+
+
+1. Introduction
+
+    1.1 Purpose
+        ◦ In over Daily Busy routine life we have lots of important work to do and sometime we forgot and in solution of the problem I started My_todo_app project which is useful for Remind task and also we can check completed task.
+
+    1.2 Project Scope
+        ◦ This Project is to help enduser to remind their daily task or Important task, using  this project they can
+            check/uncheck this task and also can add new task.
+
+    1.3 Definitions
+        ◦ in My_todo_app user can add title, description, task-dueDate and task-priority.
+        user also  include notes or even a checklist.
+
+2. Overall Description:
+
+    2.1 Product Perspective
+        ◦ This product is aimed toward a person who has difficulties for too many task at a time,
+        and might want a notebook which is contained in pocket most off the time.
+
+   2.2 User Need
+        ◦ Users should be familiar with the login, register and filters available on the website.
+
+   2.3 Assumptions and Dependencies
+        ◦ In My_todo_app there multiple way for login which is depends on other social applications.
+
+3. System Features and Requirements
+
+    3.1 Functional Requirements
+        • This section provides a requirement overview of the system. Various functional modules that can be implemented by the system will be listed below.
+
+        3.1.1 Search bar
+            • For search particular task in todo list
+
+        3.1.2 Filters
+            • Users will be provided with Date so he/she can filter task list as newest to oldest.
+
+    3.2  Non-functional Requirements
+
+        • Faster results with minimum inputs.
+        • Flexible architecture to add new features without heavy changes.
+
+4. External Interface Requirements
+
+    4.1 Various interfaces for the product could be :
+        1. Login
+        2. Register
+        3. Search with filters
+        4. Details
+
+    4.2 Software Interfaces :
+        ◦ HTML, CSS, Javascript, Python
+        ◦ Framework :- Django
+        ◦ IDE used PyCharm
+
+    4.3 Hardware Interfaces :
+        ◦ Good internet connection is enough to get your details.
+
+
+
+
+
+

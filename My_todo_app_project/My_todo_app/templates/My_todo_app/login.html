@@ -1,0 +1,30 @@
+{% extends 'My_todo_app/base.html' %}
+{% load socialaccount %}
+{% providers_media_js %}
+{% block content %}
+
+<h1>login page </h1>
+<div class="login-section ">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="button" type="submit" value="login">
+        <small class="text-muted ml-2">
+            <a href="#">Forgot Password?</a>
+        </small>
+    </form>
+    <div class="multiple_login my-3">
+        <a type="button" class="btn btn-outline-primary" href="#">Facebook
+        </a>
+        <a type="button" class="btn btn-outline-secondary" href="#">Google
+        </a>
+        <a type="button" class="btn btn-outline-success" href="#">LinkedIn
+        </a>
+        <a type="button" class="btn btn-outline-dark" href="#">GitHub</a>
+    </div>
+
+
+    <p><b>Don't have an account ----- > </b><a class="button" href="{% url 'register' %}">register</a></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'My_todo_app/base.html' %}
+{% block content %}
+
+<div class='card-body'>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        {{ category_name }}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+{% endblock %}
